@@ -22,8 +22,10 @@ function setRules(difficulty){
 	//Set mine locations
 	var mines = []
 	while(mines.length < mineAmount){
+		//Random number between the tiles amount
 		var randomnumber=Math.ceil(Math.random()*tiles)
 		var found = false
+		//Make sure does not repeat
 		for(var i=0;i<mines.length;i++){
 			if(mines[i]==randomnumber){found=true;break}
   		}
